@@ -6,9 +6,13 @@ export default function Home() {
   const [users,setUsers] = useState([]);
 
   useEffect(()=>{
-    console.log("Code with Chavdar!");
+    loadUsers();
+  },[]);
 
-  });
+  const loadUsers=async()=>{
+    const result=await axios.get("http://localhost:8080/users");
+    console.log(result);
+  }
 
 
   return (
