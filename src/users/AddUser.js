@@ -1,7 +1,10 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function AddUser() {
+
+  let navigate= useNavigate();
 
   const [user,setUser]=useState({
 
@@ -23,6 +26,7 @@ export default function AddUser() {
 
     e.preventDefault();
     await axios.post("http://localhost:8080/user",user);
+    navigate("/");
 
 
   }
