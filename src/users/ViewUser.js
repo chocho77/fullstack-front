@@ -17,12 +17,12 @@ export default function ViewUser() {
 
                     </li>
                     <li className="list-group-item">
-                        <b>Name:</b>
+                        <b>UserName:</b>
                         
 
                     </li>
                     <li className="list-group-item">
-                        <b>Name:</b>
+                        <b>Email:</b>
                         
 
                     </li>
