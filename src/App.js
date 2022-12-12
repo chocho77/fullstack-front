@@ -14,10 +14,7 @@ function App() {
         <Route exact path="/" element={<Home />}/>
         <Route exact path="/adduser" element={<AddUser />}/>
       </Routes>
-  
       </Router>
-      
-      
     </div>
   );
 }
