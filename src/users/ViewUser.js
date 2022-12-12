@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import {Link, useParams } from "react-router-dom";
 
 export default function ViewUser() {
@@ -32,22 +32,19 @@ export default function ViewUser() {
 
           <div className="card">
             <div className="card-header">
-                Details of user id :
+                Details of user id : {user.id}
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">
                         <b>Name:</b>
-
-
+                        {user.name}
                     </li>
                     <li className="list-group-item">
                         <b>UserName:</b>
-                        
-
+                        {user.username}
                     </li>
                     <li className="list-group-item">
                         <b>Email:</b>
-                        
-
+                        {user.email}
                     </li>
 
 
