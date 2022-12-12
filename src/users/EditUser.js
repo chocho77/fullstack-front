@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export default function EditUser() {
@@ -23,6 +23,11 @@ export default function EditUser() {
     setUser({...user, [e.target.name]:e.target.value})
 
   }
+
+  useEffect(()=>{
+    loadUser();
+
+  }, []);
 
   const onSubmit=async (e)=>{
 
