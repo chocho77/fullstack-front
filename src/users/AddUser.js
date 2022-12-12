@@ -44,7 +44,7 @@ export default function AddUser() {
               Name
             </label>
             <input type="text" className="form-control" placeholder="Enter your name" name="name" 
-            value={name} onChange={(e)=>onInputChange()}/>
+            value={name} onChange={(e)=>onInputChange(e)}/>
 
           </div>
           
@@ -53,7 +53,7 @@ export default function AddUser() {
               Username
             </label>
             <input type="text" className="form-control" placeholder="Enter your username" name="username" 
-            value={username} onChange={(e)=>onInputChange()}/>
+            value={username} onChange={(e)=>onInputChange(e)}/>
             
           </div>
           
@@ -62,7 +62,7 @@ export default function AddUser() {
               E-mail
             </label>
             <input type="text" className="form-control" placeholder="Enter your e-mail address" name="email" 
-            value={email} onChange={(e)=>onInputChange()}/>
+            value={email} onChange={(e)=>onInputChange(e)}/>
             
           </div>
 
